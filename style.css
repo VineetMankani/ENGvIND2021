@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: lightblue;
+    font-family: 'Staatliches', sans-serif;
+    overflow-x: hidden;
+    /* padding-top: 6%; */
+    margin: 0;
+}
+
+a#top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+}
+
+a#score{
+    position: relative;
+    bottom: 110px;
+}
+
+#mainNavbar{
+    font-size: 1.2rem;
+}
+
+#nav{
+    line-height: 1.2rem;
+}
+
+#mainNavbar #home a{
+    font-size: 1.8rem;
+    border-right: 1px solid white;
+}
+
+#mainNavbar a{
+    color: #ffffff99;
+    /* opacity: 65%; */
+    transition: 0.4s;
+}
+
+#mainNavbar a.active, #mainNavbar a:hover{
+    color: #ffffff;
+    /* opacity: 95%;  */
+}
+
+#nav span{
+    font-family: 'Poppins', serif;
+    font-size: 0.9rem;
+    opacity: 70%;
+}
+
+#toTop a{
+    text-decoration: none;
+}
+section{
+    margin: 60px 0;
+}
+
+#matchPic{
+    padding: 0 10%;
+    transition: 0.6s;
+}
+
+#matchPic:hover{
+    transform: scale(1.05);    
+}
+
+#topSection{
+    padding-top: 2%;
+}
+
+#topSection #boards, #topSection #mainpic{
+    transition: 0.6s;
+}
+
+#topSection #boards:hover {
+    transform: scale(1.15);
+}
+
+#topSection #mainpic:hover {
+    transform: scale(0.95);
+}
+
+#topSection h1{
+    font-size: 3.2rem;
+}
+
+#topSection h3{
+    font-size: 1.8rem;
+}
+
+#stadium a{
+    color: black;
+    font-size: 2.2rem;
+    text-decoration: underline;
+    /* transition: 0.6s; */
+}
+
+/* #stadium a:hover{
+    color: rgb(21, 59, 59);
+    text-decoration: none;
+    transform: scale(1.5);
+} */
+
+#stadiumPic{
+    border-radius: 12px;
+    transition: 0.4s;
+}
+
+#stadiumPic:hover{
+    /* border: 0.2px dotted white; */
+    transform: scale(2) translateY(25px);
+}
+#mainSection svg{
+    fill:blue;
+    transition: 2s;
+}
+
+#mainSection #info, #mainSection #scores{
+    font-family: 'Poppins';
+    font-size: 1rem;
+}
+
+#mainSection #scores a{
+    color: black;
+    text-decoration: none;
+    transition: 2s;
+}
+
+#hidden{
+    /* display: none; */
+    color: lightblue;
+    transition: color 0.4s;
+}
+#mainSection #scores a:hover #hidden{
+    display: inline-block;
+    color: black;
+}
+
+#hidden:hover {
+    transition: margin-left 1s;  
+}
+
+/* #mainSection #scores{
+    margin: 0 30%;
+} */
+
+/* #scores p:nth-child(3){
+    font-size: 1.1rem;
+    font-weight: 700;
+    background-color: lime;
+} */
+
+/* FOOTER */
+
+#result span{
+    font-size: 2.2vw;
+    line-height: 1rem;
+}
+
+#result span:nth-child(2){
+    font-size: 1.2vw;
+    font-family: 'Poppins';
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* #result{
+    border-bottom: 1px solid white;
+} */
+
+#flag{
+    height: 3.2vw;
+}
+
+hr{
+    margin: 1%;
+}
+
+/* #footer span:nth-child(3){
+    font-size: 1.2rem;
+} */
+
+#owner, #toTop{
+    font-size: 1.8vw;
+    letter-spacing: 0.1px;
+    font-family: 'Suez One';
+}
+
+#social svg{
+    /* fill: white; */
+    height: 2.8vw;
+    width: 2.8vw;
+    transition: 0.4s;
+}
+
+#social svg:hover{
+    /* transform: translateY(-10px); */
+    transform: scale(1.2);
+}
+
+/* INDIVIDUAL PAGES */
+
+#playing11{
+    font-family: 'Poppins';
+    font-size: 1rem;
+}
+
+#daySummary{
+    font-family: 'Poppins';
+    font-size: 0.95rem;
+}
+
+#boxTitle{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Suez One';
+    text-decoration: underline;
+}
+
+#boxSubTitle{
+    font-weight: 100;
+    font-size: 1.1rem;
+    text-decoration: underline;
+    font-family: 'Suez One';
+}
+
+table{
+    font-family: 'Poppins';
+    font-size: 0.8rem;
+    /* display: flex; */
+}
+
+table #ind{
+    background-color: #5ca4ed;
+    /* background-color: #4c9ce4; */
+    font-size: 0.9rem;
+}
+
+table #eng{
+    /* background-color: #E06c4e; */
+    background-color: #ef2430;
+    font-size: 0.9rem;
+}
+
+.heading{
+    color: blue;
+}
+
+/* < MEDIUM */
+@media (max-width: 767.98px) {
+    #mainNavbar #home a{
+        border-right: none;
+        text-align: center;
+    }
+    #result span{
+        font-size: 2.5vw;
+    }
+    #owner, #toTop{
+        font-size: 2.2vw;
+    }
+}
+
+/* MEDIUM to LARGE */
+@media (min-width: 767.98px) and (max-width: 991.98px){
+    #topSection h1{
+        font-size: 2.5rem;
+    }
+    #topSection h3{
+        font-size: 1.2rem;
+    }
+    #result span{
+        font-size: 2.5vw;
+    }
+    #owner, #toTop{
+        font-size: 2.2vw;
+    }
+}
+
+/* LARGE to EXTRA LARGE */
+/* @media (min-width: 991.98px) and (max-width: 1199.98px){
+    #topSection h1{
+        font-size: 2.5rem;
+    }
+    #topSection h3{
+        font-size: 1.2rem;
+    }
+    body{
+        background-color: blanchedalmond;
+    }
+} */
